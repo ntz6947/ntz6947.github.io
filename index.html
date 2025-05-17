@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,31 +17,37 @@
             color: #222;
             transition: background 0.5s;
         }
-        header, footer {
+
+        header,
+        footer {
             background: linear-gradient(90deg, #2c3e50 60%, #2980b9 100%);
             color: white;
             padding: 2rem 1rem 1.5rem 1rem;
             text-align: center;
-            box-shadow: 0 2px 12px 0 rgba(44,62,80,0.07);
+            box-shadow: 0 2px 12px 0 rgba(44, 62, 80, 0.07);
         }
+
         header h1 {
             font-size: 2.5rem;
             margin: 0 0 0.5rem 0;
             letter-spacing: 1px;
             font-weight: 700;
-            text-shadow: 0 2px 8px rgba(44,62,80,0.12);
+            text-shadow: 0 2px 8px rgba(44, 62, 80, 0.12);
         }
+
         main {
             padding: 2.5rem 1rem;
             max-width: 900px;
             margin: 2.5rem auto 2rem auto;
-            background: rgba(255,255,255,0.9);
+            background: rgba(255, 255, 255, 0.9);
             border-radius: 18px;
-            box-shadow: 0 4px 24px 0 rgba(44,62,80,0.08);
+            box-shadow: 0 4px 24px 0 rgba(44, 62, 80, 0.08);
         }
+
         section {
             margin-bottom: 2.5rem;
         }
+
         h2 {
             color: #2980b9;
             font-size: 2rem;
@@ -49,10 +55,12 @@
             font-weight: 700;
             letter-spacing: 0.5px;
         }
+
         ul {
             padding-right: 1.5rem;
             font-size: 1.1rem;
         }
+
         .button {
             background: linear-gradient(90deg, #27ae60 70%, #2ecc71 100%);
             color: white;
@@ -61,203 +69,244 @@
             border-radius: 30px;
             font-weight: 700;
             font-size: 1.2rem;
-            box-shadow: 0 2px 8px 0 rgba(39,174,96,0.14);
+            box-shadow: 0 2px 8px 0 rgba(39, 174, 96, 0.14);
             border: none;
             transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
             display: inline-block;
             cursor: pointer;
         }
-        .button:hover, .button:focus {
+
+        .button:hover,
+        .button:focus {
             background: linear-gradient(90deg, #219150 70%, #27ae60 100%);
             transform: translateY(-2px) scale(1.03);
-            box-shadow: 0 6px 18px 0 rgba(39,174,96,0.16);
+            box-shadow: 0 6px 18px 0 rgba(39, 174, 96, 0.16);
         }
+
         .faq {
             background: #f6fafd;
             padding: 1.4rem 1rem;
             border-radius: 10px;
-            box-shadow: 0 1px 8px 0 rgba(41,128,185,0.07);
+            box-shadow: 0 1px 8px 0 rgba(41, 128, 185, 0.07);
             transition: box-shadow 0.3s;
         }
+
         .faq strong {
             color: #2c3e50;
             display: block;
             margin-top: 1rem;
             font-size: 1.1rem;
         }
+
         .faq p {
             margin: 0.2rem 0 0.8rem 0;
         }
+
         @media (max-width: 600px) {
-            header, footer {
+
+            header,
+            footer {
                 padding: 1.2rem 0.5rem;
             }
+
             main {
                 padding: 1.2rem 0.3rem;
                 margin: 1.2rem 0.2rem;
             }
+
             h2 {
                 font-size: 1.3rem;
             }
+
             .button {
                 padding: 0.6rem 1.2rem;
                 font-size: 1rem;
             }
         }
+
         a {
             color: #2980b9;
             transition: color 0.2s;
         }
-        a:hover, a:focus {
+
+        a:hover,
+        a:focus {
             color: #145a86;
         }
+
         ::selection {
             background: #d1f2eb;
         }
-        section {
-            animation: fadeInUp 1s cubic-bezier(.39,.575,.565,1) both;
-        }
-        @keyframes fadeInUp {
-            0% { opacity: 0; transform: translateY(30px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-    .about-section {
-    background: linear-gradient(120deg, #f6fafd 60%, #e0eafc 100%);
-    box-shadow: 0 4px 18px 0 rgba(41,128,185,0.09);
-    border-radius: 18px;
-    padding: 2.5rem 1.5rem 2rem 1.5rem;
-    margin-bottom: 2.5rem;
-    position: relative;
-    overflow: hidden;
-    transition: box-shadow 0.3s;
-}
-.about-section:hover {
-    box-shadow: 0 8px 32px 0 rgba(41,128,185,0.14);
-}
-.about-icon {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
-}
-.about-section h2 {
-    color: #2980b9;
-    font-size: 2.2rem;
-    margin-bottom: 0.3rem;
-    font-weight: 700;
-}
-.about-section h3 {
-    color: #2c3e50;
-    font-size: 1.2rem;
-    font-weight: 400;
-    margin: 0 0 1.2rem 0;
-    letter-spacing: 0.5px;
-}
-.about-text ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 1.2rem 0;
-}
-.about-text li {
-    margin-bottom: 0.5rem;
-    font-size: 1.08rem;
-}
-.about-features {
-    margin-top: 0.3rem;
-    margin-bottom: 0.3rem;
-    padding-right: 1.2rem;
-}
-.about-mission {
-    font-weight: 500;
-    color: #145a86;
-    margin: 1.3rem 0 0.7rem 0;
-    font-size: 1.07rem;
-}
-.highlight {
-    background: #d1f2eb;
-    padding: 0.1em 0.4em;
-    border-radius: 8px;
-}
-.about-thanks {
-    font-size: 1.05rem;
-    color: #27ae60;
-    font-weight: 700;
-    margin-top: 1.2rem;
-}
 
-</style>
+        section {
+            animation: fadeInUp 1s cubic-bezier(.39, .575, .565, 1) both;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .about-section {
+            background: linear-gradient(120deg, #f6fafd 60%, #e0eafc 100%);
+            box-shadow: 0 4px 18px 0 rgba(41, 128, 185, 0.09);
+            border-radius: 18px;
+            padding: 2.5rem 1.5rem 2rem 1.5rem;
+            margin-bottom: 2.5rem;
+            position: relative;
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+        }
+
+        .about-section:hover {
+            box-shadow: 0 8px 32px 0 rgba(41, 128, 185, 0.14);
+        }
+
+        .about-icon {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        .about-section h2 {
+            color: #2980b9;
+            font-size: 2.2rem;
+            margin-bottom: 0.3rem;
+            font-weight: 700;
+        }
+
+        .about-section h3 {
+            color: #2c3e50;
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin: 0 0 1.2rem 0;
+            letter-spacing: 0.5px;
+        }
+
+        .about-text ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 1.2rem 0;
+        }
+
+        .about-text li {
+            margin-bottom: 0.5rem;
+            font-size: 1.08rem;
+        }
+
+        .about-features {
+            margin-top: 0.3rem;
+            margin-bottom: 0.3rem;
+            padding-right: 1.2rem;
+        }
+
+        .about-mission {
+            font-weight: 500;
+            color: #145a86;
+            margin: 1.3rem 0 0.7rem 0;
+            font-size: 1.07rem;
+        }
+
+        .highlight {
+            background: #d1f2eb;
+            padding: 0.1em 0.4em;
+            border-radius: 8px;
+        }
+
+        .about-thanks {
+            font-size: 1.05rem;
+            color: #27ae60;
+            font-weight: 700;
+            margin-top: 1.2rem;
+        }
+    </style>
 </head>
+
 <body>
 
-<header>
-    <h1>RideUp</h1>
-    <p>ניהול תחנות מוניות ונהגים בצורה חכמה</p>
-</header>
+    <header>
+        <h1>RideUp</h1>
+        <p>ניהול תחנות מוניות ונהגים בצורה חכמה</p>
+    </header>
 
-<main>
-    <section class="about-section">
-        <div class="about-icon">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="24" cy="24" r="24" fill="#2980b9"/>
-                <path d="M36 32c0-5.523-4.477-10-10-10s-10 4.477-10 10" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <circle cx="24" cy="18" r="4" fill="#fff"/>
-            </svg>
-        </div>
-        <h2>על האפליקציה</h2>
-        <h3>הדרך המודרנית לנהל תחנת מוניות</h3>
-        <div class="about-text">
-            <p><b>RideUp</b> פותחה במטרה לייעל את תהליכי העבודה בתחנות מוניות ולשפר את התקשורת בין הסדרנים לנהגים.</p>
+    <main>
+        <section class="about-section">
+            <div class="about-icon">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="24" fill="#2980b9" />
+                    <path d="M36 32c0-5.523-4.477-10-10-10s-10 4.477-10 10" stroke="#fff" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="24" cy="18" r="4" fill="#fff" />
+                </svg>
+            </div>
+            <h2>על האפליקציה</h2>
+            <h3>הדרך המודרנית לנהל תחנת מוניות</h3>
+            <div class="about-text">
+                <p><b>RideUp</b> פותחה במטרה לייעל את תהליכי העבודה בתחנות מוניות ולשפר את התקשורת בין הסדרנים לנהגים.
+                </p>
+                <ul>
+                    <li>במקום לנהל נסיעות בקבוצות וואטסאפ מבולגנות, האפליקציה מאפשרת <b>ניהול מסודר, מהיר ושקוף</b> —
+                        מרגע פרסום הנסיעה ועד לסיום שלה בפועל.</li>
+                    <li>האפליקציה מספקת כלים מתקדמים לניהול תחנה:
+                        <ul class="about-features">
+                            <li>✅ פרסום נסיעות</li>
+                            <li>✅ בקשות נהגים</li>
+                            <li>✅ בחירת נהג מתאים</li>
+                            <li>✅ מעקב אחר סטטוס וביצוע</li>
+                            <li>✅ ועוד פיצ'רים רבים בפיתוח</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p class="about-mission">אנו מאמינים שטכנולוגיה צריכה להיות <span class="highlight">פשוטה, נגישה
+                        ומותאמת</span> לצרכים האמיתיים של התחנה – וזה בדיוק מה שמוביל אותנו.</p>
+                <p class="about-thanks">💙 תודה שבחרתם <b>RideUp</b>.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>איך משתמשים?</h2>
             <ul>
-                <li>במקום לנהל נסיעות בקבוצות וואטסאפ מבולגנות, האפליקציה מאפשרת <b>ניהול מסודר, מהיר ושקוף</b> — מרגע פרסום הנסיעה ועד לסיום שלה בפועל.</li>
-                <li>האפליקציה מספקת כלים מתקדמים לניהול תחנה:
-                    <ul class="about-features">
-                        <li>✅ פרסום נסיעות</li>
-                        <li>✅ בקשות נהגים</li>
-                        <li>✅ בחירת נהג מתאים</li>
-                        <li>✅ מעקב אחר סטטוס וביצוע</li>
-                        <li>✅ ועוד פיצ'רים רבים בפיתוח</li>
-                    </ul>
-                </li>
+                <li>הסדרן מפרסם נסיעה חדשה באפליקציה.</li>
+                <li>נהגים מקבלים התראה ויכולים לבקש את הנסיעה.</li>
+                <li>הסדרן בוחר נהג, והנסיעה מתבצעת.</li>
+                <li>לאחר סיום – הנהג משלם עמלה לתחנה לפי ההגדרה.</li>
             </ul>
-            <p class="about-mission">אנו מאמינים שטכנולוגיה צריכה להיות <span class="highlight">פשוטה, נגישה ומותאמת</span> לצרכים האמיתיים של התחנה – וזה בדיוק מה שמוביל אותנו.</p>
-            <p class="about-thanks">💙 תודה שבחרתם <b>RideUp</b>.</p>
-        </div>
-    </section>
+        </section>
 
-    <section>
-        <h2>איך משתמשים?</h2>
-        <ul>
-            <li>הסדרן מפרסם נסיעה חדשה באפליקציה.</li>
-            <li>נהגים מקבלים התראה ויכולים לבקש את הנסיעה.</li>
-            <li>הסדרן בוחר נהג, והנסיעה מתבצעת.</li>
-            <li>לאחר סיום – הנהג משלם עמלה לתחנה לפי ההגדרה.</li>
-        </ul>
-    </section>
+        <section>
+            <h2>קישורים חשובים</h2>
+            <p><a href="#" class="button">הורד את האפליקציה</a></p>
+            <p><a href="terms.html">תנאים ומדיניות</a></p>
+        </section>
 
-    <section>
-        <h2>קישורים חשובים</h2>
-        <p><a href="#" class="button">הורד את האפליקציה</a></p>
-        <p><a href="terms.html">תנאים ומדיניות</a></p>
-    </section>
+        <section>
+            <h2>שאלות נפוצות</h2>
+            <div class="faq">
+                <strong>האם צריך רישיון להפעלת התחנה?</strong>
+                <p>כן, כל תחנה מחויבת לעמוד בדרישות החוק.</p>
+                <strong>איך הנהג יודע שהוא קיבל נסיעה?</strong>
+                <p>באמצעות התראה באפליקציה או הודעת WhatsApp.</p>
+            </div>
+        </section>
 
-    <section>
-        <h2>שאלות נפוצות</h2>
-        <div class="faq">
-            <strong>האם צריך רישיון להפעלת התחנה?</strong>
-            <p>כן, כל תחנה מחויבת לעמוד בדרישות החוק.</p>
-            <strong>איך הנהג יודע שהוא קיבל נסיעה?</strong>
-            <p>באמצעות התראה באפליקציה או הודעת WhatsApp.</p>
-        </div>
-    </section>
+        <section>
+            <h2>צור קשר</h2>
+            <p>ניתן לשלוח מייל לכתובת: <a href="mailto:support@rideup.app">support@rideup.app</a></p>
+        </section>
+    </main>
 
-    <section>
-        <h2>צור קשר</h2>
-        <p>ניתן לשלוח מייל לכתובת: <a href="mailto:support@rideup.app">support@rideup.app</a></p>
-    </section>
-</main>
-
-<footer>
-    &copy; 2025 RideUp | <a href="terms.html" style="color: #fff; text-decoration: underline; font-weight: 400;">תנאים ומדיניות</a>
-</footer>
+    <footer>
+        &copy; 2025 RideUp | <a href="terms.html"
+            style="color: #fff; text-decoration: underline; font-weight: 400;">תנאים ומדיניות</a>
+    </footer>
 
 </body>
+
 </html>

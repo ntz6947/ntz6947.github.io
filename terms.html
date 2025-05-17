@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,7 @@
     <style>
         .terms-card {
             background: linear-gradient(120deg, #f6fafd 60%, #e0eafc 100%);
-            box-shadow: 0 4px 18px 0 rgba(41,128,185,0.09);
+            box-shadow: 0 4px 18px 0 rgba(41, 128, 185, 0.09);
             border-radius: 18px;
             padding: 2.5rem 1.5rem 2rem 1.5rem;
             margin: 2.5rem auto 2rem auto;
@@ -17,71 +18,87 @@
             overflow: hidden;
             transition: box-shadow 0.3s;
         }
+
         .terms-card:hover {
-            box-shadow: 0 8px 32px 0 rgba(41,128,185,0.14);
+            box-shadow: 0 8px 32px 0 rgba(41, 128, 185, 0.14);
         }
+
         .terms-card h1 {
             color: #2980b9;
             font-size: 2.2rem;
             font-weight: 700;
             margin-bottom: 1.5rem;
         }
+
         .terms-card h2 {
             color: #2c3e50;
             font-size: 1.15rem;
             margin-top: 2.2rem;
             margin-bottom: 0.7rem;
         }
-        .terms-card p, .terms-card ul, .terms-card li, .terms-card ol {
+
+        .terms-card p,
+        .terms-card ul,
+        .terms-card li,
+        .terms-card ol {
             font-size: 1.08rem;
             line-height: 1.77;
             color: #222;
         }
-        .terms-card ul, .terms-card ol {
+
+        .terms-card ul,
+        .terms-card ol {
             padding-right: 1.5rem;
             margin-bottom: 1.2rem;
         }
-        .terms-card b, .terms-card strong {
+
+        .terms-card b,
+        .terms-card strong {
             color: #145a86;
         }
+
         .terms-card .highlight {
             background: #d1f2eb;
             padding: 0.1em 0.4em;
             border-radius: 8px;
         }
-        .terms-card .back {
-    margin-right: 0.5rem;
-}
 
-.whatsapp-contact {
-    margin: 1.6rem 0 1.2rem 0;
-    display: flex;
-    justify-content: flex-start;
-}
-.whatsapp-btn {
-    display: inline-flex;
-    align-items: center;
-    background: linear-gradient(90deg, #25D366 70%, #128C7E 100%);
-    color: #fff;
-    font-weight: 700;
-    font-size: 1.08rem;
-    padding: 0.7rem 1.5rem;
-    border-radius: 30px;
-    text-decoration: none;
-    box-shadow: 0 2px 8px 0 rgba(39,174,96,0.14);
-    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
-}
+        .terms-card .back {
+            margin-right: 0.5rem;
+        }
 
         .whatsapp-contact {
             margin: 1.6rem 0 1.2rem 0;
             display: flex;
             justify-content: flex-start;
-}
-@media (max-width: 600px) {
+        }
+
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            background: linear-gradient(90deg, #25D366 70%, #128C7E 100%);
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.08rem;
+            padding: 0.7rem 1.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            box-shadow: 0 2px 8px 0 rgba(39, 174, 96, 0.14);
+            transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+        }
+
+        .whatsapp-contact {
+            margin: 1.6rem 0 1.2rem 0;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        @media (max-width: 600px) {
             .terms-card {
                 padding: 1.2rem 0.3rem;
                 margin: 1.2rem 0.2rem;
             }
+
             .terms-card h1 {
                 font-size: 1.3rem;
             }
@@ -96,32 +113,39 @@
             background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
             color: #222;
         }
+
         main {
             padding: 2.5rem 1rem;
             max-width: 900px;
             margin: 2.5rem auto 2rem auto;
-            background: rgba(255,255,255,0.95);
+            background: rgba(255, 255, 255, 0.95);
             border-radius: 18px;
-            box-shadow: 0 4px 24px 0 rgba(44,62,80,0.08);
+            box-shadow: 0 4px 24px 0 rgba(44, 62, 80, 0.08);
         }
+
         h1 {
             color: #2980b9;
             font-size: 2.2rem;
             font-weight: 700;
             margin-bottom: 1.5rem;
         }
+
         h2 {
             color: #2c3e50;
             font-size: 1.3rem;
             margin-top: 2rem;
         }
-        ul, ol {
+
+        ul,
+        ol {
             padding-right: 1.5rem;
         }
+
         a {
             color: #2980b9;
             text-decoration: underline;
         }
+
         .back {
             display: inline-block;
             margin-top: 2rem;
@@ -134,12 +158,15 @@
             text-decoration: none;
             transition: background 0.3s, transform 0.2s;
         }
-        .back:hover, .back:focus {
+
+        .back:hover,
+        .back:focus {
             background: linear-gradient(90deg, #219150 70%, #27ae60 100%);
             transform: translateY(-2px) scale(1.03);
         }
     </style>
 </head>
+
 <body>
     <main class="terms-card">
         <h1>תנאים ומדיניות</h1>
@@ -147,85 +174,94 @@
         <hr>
         <h2><span class="icon">✔️</span> 1. הסכמה לתנאים</h2>
         <p>השימוש באפליקציה מהווה <b>אישור והסכמה מצד המשתמש</b> לכל התנאים וההוראות המפורטים במסמך זה.<br>
-        אם אינך מסכים לתנאים אלו – <b>אינך רשאי להשתמש באפליקציה</b>.</p>
+            אם אינך מסכים לתנאים אלו – <b>אינך רשאי להשתמש באפליקציה</b>.</p>
         <hr>
         <h2><span class="icon">📖</span> 2. הגדרות</h2>
         <ul>
-          <li><b>האפליקציה</b> – פלטפורמה טכנולוגית לניהול תפעולי של תחנות מוניות.</li>
-          <li><b>המפעיל</b> – מפתח האפליקציה ובעל הזכויות בה.</li>
-          <li><b>משתמש</b> – כל תחנה, סדרן או נהג העושה שימוש באפליקציה.</li>
-          <li><b>נסיעה</b> – כל בקשה, הקצאה או ביצוע של שירות הסעה שפורסם באפליקציה.</li>
+            <li><b>האפליקציה</b> – פלטפורמה טכנולוגית לניהול תפעולי של תחנות מוניות.</li>
+            <li><b>המפעיל</b> – מפתח האפליקציה ובעל הזכויות בה.</li>
+            <li><b>משתמש</b> – כל תחנה, סדרן או נהג העושה שימוש באפליקציה.</li>
+            <li><b>נסיעה</b> – כל בקשה, הקצאה או ביצוע של שירות הסעה שפורסם באפליקציה.</li>
         </ul>
         <hr>
         <h2><span class="icon">🚕</span> 3. מהות השירות</h2>
         <p>האפליקציה מהווה פלטפורמה דיגיטלית <b>לניהול תקשורת פנימית ותפעולית</b> בתחנות מוניות מורשות בלבד.<br>
-        האפליקציה <b>אינה מספקת שירותי הסעה</b>, <b>אינה צד להתקשרות מסחרית</b> בין נהג ללקוח, ואינה מתחייבת לביצוע נסיעות בפועל.</p>
+            האפליקציה <b>אינה מספקת שירותי הסעה</b>, <b>אינה צד להתקשרות מסחרית</b> בין נהג ללקוח, ואינה מתחייבת לביצוע
+            נסיעות בפועל.</p>
         <hr>
         <h2><span class="icon">🧑‍⚖️</span> 4. אחריות המשתמשים</h2>
         <ul>
-          <li>כל משתמש <b>נושא באחריות בלעדית</b> לכך שהוא פועל על פי דין.</li>
-          <li>נהגים נדרשים להחזיק <b>ברישיון נהיגה תקף</b> ובהיתרים נדרשים להסעת נוסעים בשכר.</li>
-          <li>תחנות נדרשות לוודא שהנהגים מטעמן <b>עומדים בדרישות החוק</b>.</li>
-          <li>המפעיל <b>אינו בודק או מאשר רישיונות או ביטוחים</b>, ואינו אחראי להפרות מצד משתמשים.</li>
+            <li>כל משתמש <b>נושא באחריות בלעדית</b> לכך שהוא פועל על פי דין.</li>
+            <li>נהגים נדרשים להחזיק <b>ברישיון נהיגה תקף</b> ובהיתרים נדרשים להסעת נוסעים בשכר.</li>
+            <li>תחנות נדרשות לוודא שהנהגים מטעמן <b>עומדים בדרישות החוק</b>.</li>
+            <li>המפעיל <b>אינו בודק או מאשר רישיונות או ביטוחים</b>, ואינו אחראי להפרות מצד משתמשים.</li>
         </ul>
         <hr>
         <h2><span class="icon">⚠️</span> 5. הגבלת אחריות</h2>
         <ul>
-          <li>האפליקציה מסופקת <b>כפי שהיא (As-Is)</b>, ללא אחריות מפורשת או משתמעת מכל סוג.</li>
-          <li>המפעיל <b>אינו אחראי</b> לנזק ישיר, עקיף, מקרי או תוצאתי מהשימוש באפליקציה.</li>
-          <li>המפעיל אינו אחראי לביצוע הנסיעות, איכות השירות, אי-הופעה, עיכובים, תאונות, נזקים או תביעות מצד כל גורם.</li>
+            <li>האפליקציה מסופקת <b>כפי שהיא (As-Is)</b>, ללא אחריות מפורשת או משתמעת מכל סוג.</li>
+            <li>המפעיל <b>אינו אחראי</b> לנזק ישיר, עקיף, מקרי או תוצאתי מהשימוש באפליקציה.</li>
+            <li>המפעיל אינו אחראי לביצוע הנסיעות, איכות השירות, אי-הופעה, עיכובים, תאונות, נזקים או תביעות מצד כל גורם.
+            </li>
         </ul>
         <hr>
         <h2><span class="icon">🔒</span> 6. הרשמה, אבטחה ופרטיות</h2>
         <ul>
-          <li>המשתמש מתחייב למסור <b>פרטים נכונים, עדכניים ומלאים</b> בעת ההרשמה.</li>
-          <li>הנתונים נשמרים בהתאם ל<b>מדיניות הפרטיות</b>.</li>
-          <li>המידע <b>לא יועבר לצד שלישי</b>, אלא לצורך תפעול השירות או בהתאם לדרישת החוק.</li>
-          <li>המפעיל רשאי <b>להשעות או למחוק חשבון משתמש</b> במקרה של שימוש לרעה או פעילות לא חוקית.</li>
+            <li>המשתמש מתחייב למסור <b>פרטים נכונים, עדכניים ומלאים</b> בעת ההרשמה.</li>
+            <li>הנתונים נשמרים בהתאם ל<b>מדיניות הפרטיות</b>.</li>
+            <li>המידע <b>לא יועבר לצד שלישי</b>, אלא לצורך תפעול השירות או בהתאם לדרישת החוק.</li>
+            <li>המפעיל רשאי <b>להשעות או למחוק חשבון משתמש</b> במקרה של שימוש לרעה או פעילות לא חוקית.</li>
         </ul>
         <hr>
         <h2><span class="icon">🚫</span> 7. פעילות אסורה</h2>
         <ul>
-          <li>חל איסור על המשתמש לבצע <b>רישום כוזב</b> או להתחזות.</li>
-          <li>חל איסור להפעיל את האפליקציה <b>לצרכים בלתי חוקיים</b> או ללא הרשאה.</li>
-          <li>חל איסור לנסות <b>לחדור למערכת</b>, להפריע לפעילות או לגשת לקוד המקור.</li>
+            <li>חל איסור על המשתמש לבצע <b>רישום כוזב</b> או להתחזות.</li>
+            <li>חל איסור להפעיל את האפליקציה <b>לצרכים בלתי חוקיים</b> או ללא הרשאה.</li>
+            <li>חל איסור לנסות <b>לחדור למערכת</b>, להפריע לפעילות או לגשת לקוד המקור.</li>
         </ul>
         <hr>
         <h2><span class="icon">🛡️</span> 8. שיפוי</h2>
         <p>המשתמש מתחייב <b>לשפות את מפעיל האפליקציה</b> בגין כל נזק, תביעה, קנס או הוצאה שנגרמו עקב:
         <ul>
-          <li>הפרת תנאים אלה</li>
-          <li>ביצוע עבירה באמצעות האפליקציה</li>
+            <li>הפרת תנאים אלה</li>
+            <li>ביצוע עבירה באמצעות האפליקציה</li>
         </ul>
         </p>
         <hr>
         <h2><span class="icon">🔄</span> 9. שינוי או סיום השירות</h2>
         <ul>
-          <li>המפעיל שומר לעצמו את הזכות <b>לשנות, להשעות או להפסיק</b> את השירות בכל עת.</li>
-          <li>זאת <b>ללא התראה מוקדמת</b> וללא חבות כלשהי כלפי המשתמש.</li>
+            <li>המפעיל שומר לעצמו את הזכות <b>לשנות, להשעות או להפסיק</b> את השירות בכל עת.</li>
+            <li>זאת <b>ללא התראה מוקדמת</b> וללא חבות כלשהי כלפי המשתמש.</li>
         </ul>
         <hr>
         <h2><span class="icon">📝</span> 10. שינויים בתנאים</h2>
         <ul>
-          <li>המפעיל רשאי <b>לעדכן את תנאי השימוש</b> מעת לעת.</li>
-          <li>המשתמש מתבקש לבדוק את התנאים לפני כל שימוש.</li>
-          <li><b>המשך שימוש באפליקציה מהווה הסכמה לתנאים המעודכנים</b>.</li>
+            <li>המפעיל רשאי <b>לעדכן את תנאי השימוש</b> מעת לעת.</li>
+            <li>המשתמש מתבקש לבדוק את התנאים לפני כל שימוש.</li>
+            <li><b>המשך שימוש באפליקציה מהווה הסכמה לתנאים המעודכנים</b>.</li>
         </ul>
         <hr>
         <h2><span class="icon">⚖️</span> 11. סמכות שיפוט</h2>
         <ul>
-          <li>על תנאים אלה <b>יחולו דיני מדינת ישראל</b>.</li>
-          <li>כל מחלוקת תידון ב<b>בתי המשפט במחוז תל אביב בלבד</b>.</li>
+            <li>על תנאים אלה <b>יחולו דיני מדינת ישראל</b>.</li>
+            <li>כל מחלוקת תידון ב<b>בתי המשפט במחוז תל אביב בלבד</b>.</li>
         </ul>
         <hr>
         <h2><span class="icon">💬</span> יצירת קשר</h2>
         <div class="whatsapp-contact">
             <a href="https://wa.me/972555036943" target="_blank" class="whatsapp-btn">
-                <svg width="22" height="22" viewBox="0 0 32 32" fill="none" style="vertical-align:middle;margin-left:0.4em;"><circle cx="16" cy="16" r="16" fill="#25D366"/><path d="M21.5 18.2c-.3-.1-1.7-.8-2-1-.3-.1-.5-.2-.7.1-.2.2-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.2-1.3-.8-.7-1.3-1.6-1.5-1.9-.2-.3 0-.4.1-.6.1-.1.2-.2.3-.4.1-.1.1-.2.2-.3.1-.2 0-.4 0-.6 0-.1-.7-1.6-.9-2.1-.2-.5-.4-.4-.7-.4-.2 0-.4 0-.6 0-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7 0 1.6 1.1 3.1 1.2 3.3.1.2 2.2 3.4 5.5 4.6.8.3 1.4.5 1.8.7.8.3 1.5.3 2 .2.6-.1 1.7-.7 1.9-1.3.2-.6.2-1.2.1-1.3-.1-.1-.3-.2-.6-.3z" fill="#fff"/></svg>
+                <svg width="22" height="22" viewBox="0 0 32 32" fill="none"
+                    style="vertical-align:middle;margin-left:0.4em;">
+                    <circle cx="16" cy="16" r="16" fill="#25D366" />
+                    <path
+                        d="M21.5 18.2c-.3-.1-1.7-.8-2-1-.3-.1-.5-.2-.7.1-.2.2-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.2-1.3-.8-.7-1.3-1.6-1.5-1.9-.2-.3 0-.4.1-.6.1-.1.2-.2.3-.4.1-.1.1-.2.2-.3.1-.2 0-.4 0-.6 0-.1-.7-1.6-.9-2.1-.2-.5-.4-.4-.7-.4-.2 0-.4 0-.6 0-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7 0 1.6 1.1 3.1 1.2 3.3.1.2 2.2 3.4 5.5 4.6.8.3 1.4.5 1.8.7.8.3 1.5.3 2 .2.6-.1 1.7-.7 1.9-1.3.2-.6.2-1.2.1-1.3-.1-.1-.3-.2-.6-.3z"
+                        fill="#fff" />
+                </svg>
                 שלחו לנו הודעה בוואטסאפ: <b>+972 55-503-6943</b>
             </a>
         </div>
         <a class="back" href="/">חזרה לדף הבית</a>
     </main>
 </body>
+
 </html>
