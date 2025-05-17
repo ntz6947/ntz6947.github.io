@@ -6,6 +6,75 @@
     <title>תנאים ומדיניות | RideUp</title>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        .terms-card {
+            background: linear-gradient(120deg, #f6fafd 60%, #e0eafc 100%);
+            box-shadow: 0 4px 18px 0 rgba(41,128,185,0.09);
+            border-radius: 18px;
+            padding: 2.5rem 1.5rem 2rem 1.5rem;
+            margin: 2.5rem auto 2rem auto;
+            max-width: 900px;
+            position: relative;
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+        }
+        .terms-card:hover {
+            box-shadow: 0 8px 32px 0 rgba(41,128,185,0.14);
+        }
+        .terms-card h1 {
+            color: #2980b9;
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        .terms-card h2 {
+            color: #2c3e50;
+            font-size: 1.15rem;
+            margin-top: 2.2rem;
+            margin-bottom: 0.7rem;
+        }
+        .terms-card p, .terms-card ul, .terms-card li, .terms-card ol {
+            font-size: 1.08rem;
+            line-height: 1.77;
+            color: #222;
+        }
+        .terms-card ul, .terms-card ol {
+            padding-right: 1.5rem;
+            margin-bottom: 1.2rem;
+        }
+        .terms-card b, .terms-card strong {
+            color: #145a86;
+        }
+        .terms-card .highlight {
+            background: #d1f2eb;
+            padding: 0.1em 0.4em;
+            border-radius: 8px;
+        }
+        .terms-card .back {
+            display: inline-block;
+            margin-top: 2rem;
+            background: linear-gradient(90deg, #27ae60 70%, #2ecc71 100%);
+            color: white;
+            padding: 0.6rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .terms-card .back:hover, .terms-card .back:focus {
+            background: linear-gradient(90deg, #219150 70%, #27ae60 100%);
+            transform: translateY(-2px) scale(1.03);
+        }
+        @media (max-width: 600px) {
+            .terms-card {
+                padding: 1.2rem 0.3rem;
+                margin: 1.2rem 0.2rem;
+            }
+            .terms-card h1 {
+                font-size: 1.3rem;
+            }
+        }
+
         body {
             font-family: 'Heebo', Arial, sans-serif;
             direction: rtl;
@@ -60,7 +129,7 @@
     </style>
 </head>
 <body>
-    <main>
+    <main class="terms-card">
         <h1>תנאים ומדיניות</h1>
         <h2>1. מבוא</h2>
         <p> 🧾 תנאי שימוש – אפליקציית RideUp  

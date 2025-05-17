@@ -121,7 +121,70 @@
             0% { opacity: 0; transform: translateY(30px); }
             100% { opacity: 1; transform: translateY(0); }
         }
-    </style>
+    .about-section {
+    background: linear-gradient(120deg, #f6fafd 60%, #e0eafc 100%);
+    box-shadow: 0 4px 18px 0 rgba(41,128,185,0.09);
+    border-radius: 18px;
+    padding: 2.5rem 1.5rem 2rem 1.5rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+}
+.about-section:hover {
+    box-shadow: 0 8px 32px 0 rgba(41,128,185,0.14);
+}
+.about-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.about-section h2 {
+    color: #2980b9;
+    font-size: 2.2rem;
+    margin-bottom: 0.3rem;
+    font-weight: 700;
+}
+.about-section h3 {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0 0 1.2rem 0;
+    letter-spacing: 0.5px;
+}
+.about-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.2rem 0;
+}
+.about-text li {
+    margin-bottom: 0.5rem;
+    font-size: 1.08rem;
+}
+.about-features {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    padding-right: 1.2rem;
+}
+.about-mission {
+    font-weight: 500;
+    color: #145a86;
+    margin: 1.3rem 0 0.7rem 0;
+    font-size: 1.07rem;
+}
+.highlight {
+    background: #d1f2eb;
+    padding: 0.1em 0.4em;
+    border-radius: 8px;
+}
+.about-thanks {
+    font-size: 1.05rem;
+    color: #27ae60;
+    font-weight: 700;
+    margin-top: 1.2rem;
+}
+
+</style>
 </head>
 <body>
 
@@ -131,22 +194,33 @@
 </header>
 
 <main>
-    <section>
+    <section class="about-section">
+        <div class="about-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="24" fill="#2980b9"/>
+                <path d="M36 32c0-5.523-4.477-10-10-10s-10 4.477-10 10" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="24" cy="18" r="4" fill="#fff"/>
+            </svg>
+        </div>
         <h2>על האפליקציה</h2>
-        <p>אפליקציית RideUp פותחה במטרה לייעל את תהליכי העבודה בתחנות מוניות ולשפר את התקשורת בין הסדרנים לנהגים.
-
-            במקום לנהל נסיעות בקבוצות וואטסאפ מבולגנות, האפליקציה מאפשרת ניהול נסיעות מסודר, מהיר ושקוף — מרגע פרסום הנסיעה ועד לסיום שלה בפועל.
-            
-            האפליקציה מספקת כלים מתקדמים לניהול תחנה:
-            ✅ פרסום נסיעות
-            ✅ בקשות נהגים
-            ✅ בחירת נהג מתאים
-            ✅ מעקב אחר סטטוס וביצוע
-            ✅ ועוד פיצ'רים רבים בפיתוח
-            
-            אנו מאמינים שטכנולוגיה צריכה להיות פשוטה, נגישה ומותאמת לצרכים האמיתיים של התחנה – וזה בדיוק מה שמוביל אותנו.
-            
-            תודה שבחרתם RideUp.</p>
+        <h3>הדרך המודרנית לנהל תחנת מוניות</h3>
+        <div class="about-text">
+            <p><b>RideUp</b> פותחה במטרה לייעל את תהליכי העבודה בתחנות מוניות ולשפר את התקשורת בין הסדרנים לנהגים.</p>
+            <ul>
+                <li>במקום לנהל נסיעות בקבוצות וואטסאפ מבולגנות, האפליקציה מאפשרת <b>ניהול מסודר, מהיר ושקוף</b> — מרגע פרסום הנסיעה ועד לסיום שלה בפועל.</li>
+                <li>האפליקציה מספקת כלים מתקדמים לניהול תחנה:
+                    <ul class="about-features">
+                        <li>✅ פרסום נסיעות</li>
+                        <li>✅ בקשות נהגים</li>
+                        <li>✅ בחירת נהג מתאים</li>
+                        <li>✅ מעקב אחר סטטוס וביצוע</li>
+                        <li>✅ ועוד פיצ'רים רבים בפיתוח</li>
+                    </ul>
+                </li>
+            </ul>
+            <p class="about-mission">אנו מאמינים שטכנולוגיה צריכה להיות <span class="highlight">פשוטה, נגישה ומותאמת</span> לצרכים האמיתיים של התחנה – וזה בדיוק מה שמוביל אותנו.</p>
+            <p class="about-thanks">💙 תודה שבחרתם <b>RideUp</b>.</p>
+        </div>
     </section>
 
     <section>
