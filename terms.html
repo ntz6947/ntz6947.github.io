@@ -51,23 +51,33 @@
         }
         .terms-card .back {
     margin-right: 0.5rem;
+}
 
-            display: inline-block;
-            margin-top: 2rem;
-            background: linear-gradient(90deg, #27ae60 70%, #2ecc71 100%);
-            color: white;
-            padding: 0.6rem 1.5rem;
-            border-radius: 30px;
-            font-weight: 700;
-            font-size: 1.1rem;
-            text-decoration: none;
-            transition: background 0.3s, transform 0.2s;
-        }
-        .terms-card .back:hover, .terms-card .back:focus {
-            background: linear-gradient(90deg, #219150 70%, #27ae60 100%);
-            transform: translateY(-2px) scale(1.03);
-        }
-        @media (max-width: 600px) {
+.whatsapp-contact {
+    margin: 1.6rem 0 1.2rem 0;
+    display: flex;
+    justify-content: flex-start;
+}
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(90deg, #25D366 70%, #128C7E 100%);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.08rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 2px 8px 0 rgba(39,174,96,0.14);
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+        .whatsapp-contact {
+            margin: 1.6rem 0 1.2rem 0;
+            display: flex;
+            justify-content: flex-start;
+}
+@media (max-width: 600px) {
             .terms-card {
                 padding: 1.2rem 0.3rem;
                 margin: 1.2rem 0.2rem;
@@ -208,8 +218,13 @@
           <li>כל מחלוקת תידון ב<b>בתי המשפט במחוז תל אביב בלבד</b>.</li>
         </ul>
         <hr>
-        <h2><span class="icon">📧</span> יצירת קשר</h2>
-        <p>לשאלות ניתן לפנות לכתובת: <a href="mailto:support@rideup.app" class="contact-link">support@rideup.app</a></p>
+        <h2><span class="icon">💬</span> יצירת קשר</h2>
+        <div class="whatsapp-contact">
+            <a href="https://wa.me/972555036943" target="_blank" class="whatsapp-btn">
+                <svg width="22" height="22" viewBox="0 0 32 32" fill="none" style="vertical-align:middle;margin-left:0.4em;"><circle cx="16" cy="16" r="16" fill="#25D366"/><path d="M21.5 18.2c-.3-.1-1.7-.8-2-1-.3-.1-.5-.2-.7.1-.2.2-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.2-1.3-.8-.7-1.3-1.6-1.5-1.9-.2-.3 0-.4.1-.6.1-.1.2-.2.3-.4.1-.1.1-.2.2-.3.1-.2 0-.4 0-.6 0-.1-.7-1.6-.9-2.1-.2-.5-.4-.4-.7-.4-.2 0-.4 0-.6 0-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7 0 1.6 1.1 3.1 1.2 3.3.1.2 2.2 3.4 5.5 4.6.8.3 1.4.5 1.8.7.8.3 1.5.3 2 .2.6-.1 1.7-.7 1.9-1.3.2-.6.2-1.2.1-1.3-.1-.1-.3-.2-.6-.3z" fill="#fff"/></svg>
+                שלחו לנו הודעה בוואטסאפ: <b>+972 55-503-6943</b>
+            </a>
+        </div>
         <a class="back" href="/">חזרה לדף הבית</a>
     </main>
 </body>
